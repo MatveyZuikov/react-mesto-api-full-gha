@@ -76,6 +76,8 @@ export default function App() {
 
   function signOut() {
     sessionStorage.removeItem("userId");
+    setLoggedIn(false);
+    setCurrentUser({});
     navigate("/sign-in");
   }
 

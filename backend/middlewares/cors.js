@@ -1,4 +1,11 @@
-const allowedCors = ["http://localhost:3005", "http://localhost:3000"];
+const allowedCors = [
+  "http://localhost:3005",
+  "http://localhost:3000",
+  "https://mesto.n1ght.nomoredomainsmonster.ru",
+  "http://mesto.n1ght.nomoredomainsmonster.ru",
+  "https://api.mesto.n1ght.nomoredomainsmonster.ru",
+  "http://api.mesto.n1ght.nomoredomainsmonster.ru",
+];
 
 const cors = function (req, res, next) {
   const { origin } = req.headers;
