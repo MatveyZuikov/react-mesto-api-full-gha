@@ -1,0 +1,11 @@
+.profile__first-line {
+  display: flex;
+  margin: 0 0 8px;
+
+}
+
+@media (min-width: 320px) and (max-width:768px) {
+  .profile__first-line {
+    margin: 0px auto 14px;
+  }
+}

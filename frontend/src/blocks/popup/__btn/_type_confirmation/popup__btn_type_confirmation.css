@@ -1,0 +1,9 @@
+.popup__btn_type_confirmation{
+  margin: 0 36px 36px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .popup__btn_type_confirmation {
+    margin: 0 auto 25px;
+  }
+}

@@ -1,0 +1,13 @@
+.header__btn {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.21;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    height: 22px;
+}
+
+.header__btn:hover {
+    opacity: 0.6;
+}

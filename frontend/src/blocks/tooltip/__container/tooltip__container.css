@@ -1,0 +1,15 @@
+.tooltip__container {
+    width: 430px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+  
+  @media (min-width: 320px) and (max-width: 768px) {
+    .tooltip__container {
+      width: 282px;
+    }
+  }

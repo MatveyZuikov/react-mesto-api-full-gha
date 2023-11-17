@@ -1,0 +1,13 @@
+.footer__project-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.21;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .footer__project-name {
+    font-size: 14px;
+  }
+}

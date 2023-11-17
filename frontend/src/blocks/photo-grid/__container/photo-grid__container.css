@@ -1,0 +1,6 @@
+.photo-grid__container {
+  display: flex;
+  justify-content: space-between;
+  width: 246px;
+  margin: 25px 15px 20px 21px;
+}
