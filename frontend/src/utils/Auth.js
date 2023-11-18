@@ -39,6 +39,7 @@ class Auth {
       .then(this._getResponseData)
       .then((data) => {
         sessionStorage.setItem("userId", data._id);
+        return data;
       });
   };
 
