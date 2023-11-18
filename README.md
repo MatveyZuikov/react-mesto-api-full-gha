@@ -10,8 +10,8 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.131.110
+IP-адрес 158.160.128.56
 
-Frontend http://mesto.n1ght.nomoredomainsmonster.ru
+Frontend https://mesto.n1ght.nomoredomainsmonster.ru
 
-Backend http://api.mesto.n1ght.nomoredomainsmonster.ru
+Backend https://api.mesto.n1ght.nomoredomainsmonster.ru
