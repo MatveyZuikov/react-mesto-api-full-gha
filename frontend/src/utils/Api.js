@@ -87,7 +87,8 @@ class Api {
 }
 
 const api = new Api({
-  url: "http://api.mesto.n1ght.nomoredomainsmonster.ru",
+  // url: "http://api.mesto.n1ght.nomoredomainsmonster.ru",
+   url: "http://localhost:3005",
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",

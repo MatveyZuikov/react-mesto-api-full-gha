@@ -1,8 +1,6 @@
 class Auth {
   constructor({ url }) {
     this._url = url;
-    // this._token = token;
-    // this.jwt = localStorage.getItem("jwt");
   }
 
   _getResponseData = (response) => {
@@ -57,7 +55,8 @@ class Auth {
 }
 
 const auth = new Auth({
-  url: "http://api.mesto.n1ght.nomoredomainsmonster.ru",
+  // url: "http://api.mesto.n1ght.nomoredomainsmonster.ru",
+  url: "http://localhost:3005",
 });
 
 export default auth;

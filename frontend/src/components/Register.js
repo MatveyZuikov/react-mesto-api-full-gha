@@ -43,7 +43,7 @@ export default function Register({ onSubmit }) {
         />
         <input
           className="login__input"
-          type="text"
+          type="password"
           name="password"
           placeholder="Пароль"
           required

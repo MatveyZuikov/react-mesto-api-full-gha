@@ -15,7 +15,7 @@ const LinkPattern = require("./utils/avatarPattern");
 const NotFoundError = require("./errors/NotFoundError");
 const { requestLogger, errorLogger } = require("./middlewares/logger");
 
-const { PORT = 3000, MONGO_URL = "mongodb://127.0.0.1:27017/mestodb" } =
+const { PORT = 3005, MONGO_URL = "mongodb://127.0.0.1:27017/mestodb" } =
   process.env;
 
 mongoose
@@ -30,12 +30,6 @@ const app = express();
 
 app.use(cors);
 
-// app.use(
-//   cors({
-//     origin: ["http://localhost:3005", "http://localhost:3000"],
-//     credentials: true,
-//   })
-// );
 app.use(cookieParser());
 
 app.use(express.json());
