@@ -2,7 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const router = require("express").Router();
-const cors = require("./middlewares/cors");
+// const cors = require("./middlewares/cors");
+const cors = require("cors");
 
 const usersRouter = require("./routes/users");
 const cardsRouter = require("./routes/cards");
@@ -28,7 +29,20 @@ mongoose
 
 const app = express();
 
-app.use(cors);
+// app.use(cors);
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3005",
+      "http://localhost:3000",
+      "https://mesto.n1ght.nomoredomainsmonster.ru",
+      "http://mesto.n1ght.nomoredomainsmonster.ru",
+      "https://api.mesto.n1ght.nomoredomainsmonster.ru",
+      "http://api.mesto.n1ght.nomoredomainsmonster.ru",
+    ],
+    credentials: true,
+  })
+);
 
 app.use(cookieParser());
 
