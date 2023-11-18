@@ -55,7 +55,7 @@ const login = (req, res, next) => {
           sameSite: "none",
           secure: true,
         })
-        .send({ user });
+        .send(user);
     })
     .catch(next);
 };
