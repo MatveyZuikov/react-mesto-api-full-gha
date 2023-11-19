@@ -9,6 +9,12 @@ const NotFoundError = require("../errors/NotFoundError");
 const CastError = require("../errors/CastError");
 
 const saltRounds = 10;
+let secureValue;
+if (NODE_ENV === "production") {
+  secureValue = false;
+} else {
+  secureValue = true;
+}
 
 const createUser = (req, res, next) => {
   const { name, about, avatar, email, password } = req.body;
@@ -53,7 +59,7 @@ const login = (req, res, next) => {
           maxAge: 3600000,
           httpOnly: true,
           sameSite: "none",
-          secure: false,
+          secure: secureValue,
         })
         .send(user);
     })
