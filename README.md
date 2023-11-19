@@ -10,7 +10,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.128.56
+IP 158.160.128.56
 
 Frontend https://mesto.n1ght.nomoredomainsmonster.ru
 
