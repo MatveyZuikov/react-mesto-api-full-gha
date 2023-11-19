@@ -11,9 +11,9 @@ const CastError = require("../errors/CastError");
 const saltRounds = 10;
 let secureValue;
 if (NODE_ENV === "production") {
-  secureValue = false;
-} else {
   secureValue = true;
+} else {
+  secureValue = false;
 }
 
 const createUser = (req, res, next) => {
